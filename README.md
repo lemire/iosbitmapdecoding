@@ -23,6 +23,45 @@ Inspired by this blog post...
 - You should now see the app on your device. By default, iOS won't let you run it, so go under Settings > General. You will find a setting there to allow you to run the app.
 - Run the app.
 
+## Sample result
+
+iPhone XR, Xcode 10.1
+```
+129996 129996 
+basic_decoder time 45.938914 nanoseconds per set bit 
+simdjson_decoder time 11.339772  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 15.304638 nanoseconds per set bit 
+simdjson_decoder time 11.169254  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 14.227681 nanoseconds per set bit 
+simdjson_decoder time 10.192621  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 9.827546 nanoseconds per set bit 
+simdjson_decoder time 7.529719  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 9.522729 nanoseconds per set bit 
+simdjson_decoder time 7.445742  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 9.461830 nanoseconds per set bit 
+simdjson_decoder time 7.417536  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 9.493561 nanoseconds per set bit 
+simdjson_decoder time 7.439652  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 9.995500 nanoseconds per set bit 
+simdjson_decoder time 5.838000  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 7.306956 nanoseconds per set bit 
+simdjson_decoder time 5.705624  nanoseconds per set bit  
+129996 129996 
+basic_decoder time 7.095731 nanoseconds per set bit 
+simdjson_decoder time 5.920374  nanoseconds per set bit  
+```
+iPhone XR, Xcode 10.1
+
+
+
 ## Credit
 
 
