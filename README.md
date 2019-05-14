@@ -5,7 +5,6 @@ Inspired by this blog post...
 
  - Really fast bitset decoding for “average” densities https://lemire.me/blog/2019/05/03/really-fast-bitset-decoding-for-average-densities/
 
-The app. reused code by Benoît Maison.
 
 ## Requirements
 
@@ -24,3 +23,7 @@ The app. reused code by Benoît Maison.
 - You should now see the app on your device. By default, iOS won't let you run it, so go under Settings > General. You will find a setting there to allow you to run the app.
 - Run the app.
 
+## Credit
+
+
+The app. reuses code by Benoît Maison.
