@@ -28,38 +28,39 @@ Inspired by this blog post...
 iPhone XR, Xcode 10.1
 ```
 129996 129996 
-basic_decoder time 45.938914 nanoseconds per set bit 
-simdjson_decoder time 11.339772  nanoseconds per set bit  
+basic_decoder time 49.067215 nanoseconds per set bit 
+simdjson_decoder time 11.251628  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 15.304638 nanoseconds per set bit 
-simdjson_decoder time 11.169254  nanoseconds per set bit  
+basic_decoder time 1.704219 nanoseconds per set bit 
+simdjson_decoder time 1.197152  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 14.227681 nanoseconds per set bit 
-simdjson_decoder time 10.192621  nanoseconds per set bit  
+basic_decoder time 1.682744 nanoseconds per set bit 
+simdjson_decoder time 1.172792  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 9.827546 nanoseconds per set bit 
-simdjson_decoder time 7.529719  nanoseconds per set bit  
+basic_decoder time 1.693321 nanoseconds per set bit 
+simdjson_decoder time 1.175998  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 9.522729 nanoseconds per set bit 
-simdjson_decoder time 7.445742  nanoseconds per set bit  
+basic_decoder time 1.683385 nanoseconds per set bit 
+simdjson_decoder time 1.168626  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 9.461830 nanoseconds per set bit 
-simdjson_decoder time 7.417536  nanoseconds per set bit  
+basic_decoder time 1.699411 nanoseconds per set bit 
+simdjson_decoder time 1.176318  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 9.493561 nanoseconds per set bit 
-simdjson_decoder time 7.439652  nanoseconds per set bit  
+basic_decoder time 1.750374 nanoseconds per set bit 
+simdjson_decoder time 1.171510  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 9.995500 nanoseconds per set bit 
-simdjson_decoder time 5.838000  nanoseconds per set bit  
+basic_decoder time 1.744284 nanoseconds per set bit 
+simdjson_decoder time 1.167344  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 7.306956 nanoseconds per set bit 
-simdjson_decoder time 5.705624  nanoseconds per set bit  
+basic_decoder time 1.717040 nanoseconds per set bit 
+simdjson_decoder time 1.164138  nanoseconds per set bit  
 129996 129996 
-basic_decoder time 7.095731 nanoseconds per set bit 
-simdjson_decoder time 5.920374  nanoseconds per set bit  
+basic_decoder time 1.792363 nanoseconds per set bit 
+simdjson_decoder time 1.331451  nanoseconds per set bit  
+
 ```
 
-The Apple A12 has seemingly a rated frequency of 2.5GHz. So these nanoseconds translate into about 18 and 15 cycles per set bit.
+The Apple A12 has seemingly a rated frequency of 2.5GHz. So these nanoseconds translate into about 4.5 and 3.3 cycles per set bit. For comparison, an Intel Skylake get 4.7	and	3.4 cycles per set bit.
 
 
 
