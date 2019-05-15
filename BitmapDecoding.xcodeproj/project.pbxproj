@@ -321,6 +321,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ4M2592H5;
+				"GCC_OPTIMIZATION_LEVEL[arch=*]" = s;
 				INFOPLIST_FILE = bitmapdecoding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

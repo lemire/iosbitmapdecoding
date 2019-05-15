@@ -106,8 +106,9 @@ extern "C" {
     
     #include <mach/mach_time.h>
     int measure(size_t length, char * result) {
+        size_t multiplier = 1000;
         uint32_t *bigarray = (uint32_t *)malloc(sizeof(uint32_t) * WORDCOUNT * 64);
-        for(size_t z = 0; z < 10; z++) {
+        for(size_t z = 0; z < 10 * multiplier; z++) {
             bigarray[rand() % WORDCOUNT] ^= rand(); // to defeat optimizers
             uint32_t matches1 = 0;
             const uint64_t startTime1 = mach_absolute_time();
@@ -123,9 +124,11 @@ extern "C" {
             mach_timebase_info(&info);
             const double elapsedNS1 = (double) (endTime1 - startTime1) * (double)info.numer / (double)info.denom;
             const double elapsedNS2 = (double) (endTime2 - startTime2) * (double)info.numer / (double)info.denom;
-            result+= sprintf(result, "%u %u \n", matches1, matches2);
-            result+= sprintf(result, "basic_decoder time %f nanoseconds per set bit \n", elapsedNS1 / matches1);
-            result+= sprintf(result, "simdjson_decoder time %f  nanoseconds per set bit  \n", elapsedNS2 / matches2);
+            if((z % multiplier) == 0) {
+              result+= sprintf(result, "%u %u \n", matches1, matches2);
+              result+= sprintf(result, "basic_decoder time %f nanoseconds per set bit \n", elapsedNS1 / matches1);
+              result+= sprintf(result, "simdjson_decoder time %f  nanoseconds per set bit  \n", elapsedNS2 / matches2);
+            }
         }
         free(bigarray);
         return 10000;
