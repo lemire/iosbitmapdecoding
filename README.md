@@ -60,7 +60,7 @@ simdjson_decoder time 1.331451  nanoseconds per set bit
 
 ```
 
-The Apple A12 has seemingly a rated frequency of 2.5GHz. So these nanoseconds translate into about 4.5 and 3.3 cycles per set bit. For comparison, an Intel Skylake get 4.7	and	3.4 cycles per set bit.
+The Apple A12 has seemingly a rated frequency of 2.5GHz. So these nanoseconds translate into about 4.3 and 3.0 cycles per set bit. For comparison, an Intel Skylake get 4.7	and	3.4 cycles per set bit.
 
 
 
