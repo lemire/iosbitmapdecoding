@@ -58,7 +58,8 @@ simdjson_decoder time 5.705624  nanoseconds per set bit
 basic_decoder time 7.095731 nanoseconds per set bit 
 simdjson_decoder time 5.920374  nanoseconds per set bit  
 ```
-iPhone XR, Xcode 10.1
+
+The Apple A12 has seemingly a rated frequency of 2.5GHz. So these nanoseconds translate into about 18 and 15 cycles per set bit.
 
 
 
