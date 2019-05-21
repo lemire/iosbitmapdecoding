@@ -23,6 +23,12 @@ Inspired by this blog post...
 - You should now see the app on your device. By default, iOS won't let you run it, so go under Settings > General. You will find a setting there to allow you to run the app.
 - Run the app.
 
+## Using Instruments
+
+Apple has a tool called Instruments as part of Xcode that can be used to record the number of instructions (FIXED_INSTRUCTIONS) and the number of cycles (FIXED_CYCLES). First build and upload your app. Connect your device to your mac and launch Instruments, select the "Counters" template and your device and app. Then go to File > Recording Options and click the + in the “Events and Formulas” section, and pick the events FIXED_INSTRUCTIONS and FIXED_CYCLES and sample by time. 
+
+For this app, I found that FIXED_INSTRUCTIONS goes up to 29346274130 whereas FIXED_CYCLES goes up to 9408002514 for an average of 3.12 instructions per cycle. TIt is much higher than on x64 where the highest I reach for part of the benchmark is 2.6 instructions per cycle.
+
 ## Sample result
 
 iPhone XR, Xcode 10.1
